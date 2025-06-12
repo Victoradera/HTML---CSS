@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+        /*TUDO QUE É ID NO HTML, VIRA # NO CSS*/
+
+body {
+    background-color: rgb(159, 246, 217);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   color: rgb(35, 67, 57); 
+}
+
+/*Esse h1 será diferenciado em relação aos outros*/
+h1#principal {
+    text-align: center;
+    background-color: rgb(196, 249, 231);
+}
+
+h2 {
+    color: rgb(59, 115, 96);
+}
+
+.basico {
+    color: rgb(41, 82, 0);
+}
+
+.intermediario {
+    color: rgb(185, 133, 0);
+}
+
+.avancado {
+    color: rgb(136, 0, 0);
+}
+
+.destaque {
+    background-color: rgb(229, 146, 87);
+}

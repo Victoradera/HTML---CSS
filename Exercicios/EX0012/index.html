@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+<h1>Inserindo vídeos hospedados localmente</h1>  
+<p>Este vídeo está hospedado no meu próprio servidor.</p>
+<p>Primeira forma de fazer:</p>
+<video src="midiaex12/Childish Gambino - Lithonia (Audio).mp4" width="500" controls></video> 
+<!--(Width) serve para arrumar o tamanho do vídeo. (Controls) serve para dar play no vídeo.-->
+<p>Mas para funcionar em todos os navegadores, é bom colocar o mesmo vídeo em todos os formatos, essa é a fórmula:</p>
+<video width="500" poster="imagensex12/capa do vídeo.png" controls> 
+<!--É bom listar do menor para o maior em armazenamento-->
+<!--(Poster) serve para colocar a capa do vídeo-->
+    <source src="midiaex12/Childish Gambino - Lithonia (OGG).ogg" type="video/ogg">
+    <source src="midiaex12/Childish Gambino - Lithonia (Audio).mp4" type="video/mp4">
+<!--Outros formatos que eu devo colocar SEMPRE: m4v, webm.-->
+<!--O m4v. é o formato mais recomendável.-->
+</video>
+<p>Sempre explique para o cliente que vídeos no site deixa a hospedagem mais cara porquê consome muito mais downloads já que os vídeos são pesados.</p>
+
+<h1>Inserindo Vídeos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WpW36ldAqnM?si=Kc-uBwQB_y5aRHk9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--Indo no próprio youtube e copiar o código na opção (compartilhar, incorporar)-->
+<p>Não consomem mais downloads e não deixa a hospedagem mais cara.</p>
+<p>Se eu não quiser pegar do youtube, posso fazer isso com o site de vídeos Vimeo (é mais fluído e com uma qualidade melhor, mas é pago a hospedagem do vídeo).</p>
+<p>(Ter cuidado com direitos autorais, isso pode quebrar o site se der errado.)</p>
+</body>
+</html>

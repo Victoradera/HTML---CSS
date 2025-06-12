@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    
+    <style>
+/*Baixei uma fonte da internet, coloquei (@font-face) e apareceu esse código, coloquei a url do arquivo e o formato conforme está embaixo, depois nomeei a fonte. */
+        @font-face {
+            font-family: 'starbim';
+            src: url(Starbim.otf) format('opentype'), url(Starbim.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*Tipos de formato::
+        - Opentype (otf)
+        - Truetype (ttf)
+        - Embedded-opentype
+        - Truetype-aat (aple advenced typography)
+        - svg*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'starbim' ,'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+   <h1>Título</h1> 
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet accusantium corporis mollitia reiciendis quo at tempora assumenda quae. Corporis quibusdam quae alias porro pariatur, repellat mollitia error cumque amet molestiae!</p>
+</body>
+</html>
