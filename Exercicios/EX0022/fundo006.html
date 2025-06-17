@@ -9,15 +9,21 @@
             height: 100vh;
             background-color: black;
             background-image: url(Imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
+            background-attachment: fixed; /*Para a imagem ñ mexer*/
             background-size: cover; 
             /*(Cover) é melhor que (Contain), porque a imagem fica melhor encaixada. Tem o (Auto) também*/
+            
+            /*Shorthand - background:
+            Color > image > position > repeat > size > attachment*/
+
+            background: black url(Imagens/wallpaper002.jpg) center center no-repeat cover fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px; /*(Max) para o celular*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +34,11 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nemo ipsam consequatur aliquam quod laboriosam ullam adipisci accusantium, perspiciatis magni placeat ad enim eum, deleniti molestias, maxime qui vel! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero accusantium delectus fugit assumenda voluptatibus quasi facilis. Minima recusandae exercitationem excepturi ut, quis rerum iste, libero laudantium saepe vel neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eum quos adipisci sed totam facilis quaerat voluptates eveniet quod voluptatum nobis maxime, quam id earum vel odio blanditiis! Nulla, voluptates!</p>
     </main>
 </body>
