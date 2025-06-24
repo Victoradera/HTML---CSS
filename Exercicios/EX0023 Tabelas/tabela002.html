@@ -12,16 +12,42 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative; /*para fixar o cabeçalho*/
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(176, 176, 176);
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
             
         }
 
-        thead {
-            background-color: gray;
-            color: ;
+        td.num {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: rgb(100, 100, 100);
+            color: white;
+        }
+
+        thead > tr > th { /*para o cabeçalho não sumir ao rolar*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(100, 100, 100);
+        }
+
+        tbody > tr:nth-child(2n) { 
+        /*para ficar diferente de 2 em 2 linhas*/
+        /*pode ser (odd) para impar e (even) para par*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -30,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES:
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -38,20 +65,32 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Soma das Cidades mais Povoadas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th>Estado</th> <!--(th) para título-->
+                <th style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 973 194</td>
+                <td class="num">45 973 194</td> <!--(td) para dado-->
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 691</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num"><strong>84.515.564</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
