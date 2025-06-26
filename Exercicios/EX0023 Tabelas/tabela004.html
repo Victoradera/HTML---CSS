@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+        }
+
+        tr {
+            width: 50px;
+            
+        }
+
+        td,th {
+            border: 1px solid black; 
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(108, 108, 108);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        td.nomes {
+            font-weight: bold;
+            background-color: rgba(127, 255, 212, 0.464);
+        }
+    </style>
+</head>
+<body>
+    <h1>Grupos de Filmes</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td class="nomes">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td class="nomes">Beatriz Silva</td>
+                <td>Memento</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td class="nomes">Claudia Melo</td>
+                <td>Duna</td>
+                <td>Tróia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td class="nomes">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Matrix</td>
+                <td>Star Wars</td>
+            </tr>
+            <tr>
+                <td class="nomes">Daniel Lourenço</td>
+                <td>Hellboy</td>
+                <td>Homem-aranha</td>
+                <td>Superman (1978)</td>
+            </tr>
+            <tr>
+                <td class="nomes">Fabio Mota</td>
+                <td>Tarzan (Disney)</td>
+                <td>Rei Leão</td>
+                <td>ElDorado</td>
+            </tr>
+            <tfoot>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>
