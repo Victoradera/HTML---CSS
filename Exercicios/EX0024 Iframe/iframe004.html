@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguranças no iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam enim illo dolore vel natus nobis voluptates hic nam deserunt! Impedit laudantium nobis amet necessitatibus praesentium eaque quisquam similique at! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, at sunt laborum eum nam quas ratione facere deserunt harum velit tempore quia possimus repellat, nisi voluptates quis molestiae magnam culpa?</p>
+
+    <iframe src="pagina004.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        [Seu navegador não é compatível]
+        <!--(sandbox="sandbox") Serve para protegert o iframe-->
+        <!--(referrerpolicy="no-referrer") para não coletar dados-->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita enim delectus consequuntur sed dolorem? Vero ipsa dicta assumenda doloribus impedit eaque libero quaerat sapiente optio? Laudantium saepe veniam cumque?</p>
+
+    <iframe src="pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        [Seu navegador não é compatível]
+        <!--(sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer") Permite a entrada desses formatos de conteúdos-->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo velit debitis voluptatum optio blanditiis sequi doloremque officiis magnam, dolorum, dicta ullam harum. Quaerat obcaecati eos quibusdam molestias exercitationem, in accusantium!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, numquam itaque debitis temporibus vitae dolorum, ipsam quis suscipit veniam magni eos totam, animi odit optio. Inventore quo illo adipisci id.</p>
+
+        <iframe src="pagina005.html" sandbox="allow-scripts"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis vitae mollitia at, nulla eaque perspiciatis commodi eligendi dolor unde numquam, quaerat, cum nemo aliquam aperiam! Incidunt in totam <molestiae class="lorem"></molestiae></p>
+</body>
+</html>
