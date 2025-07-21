@@ -12,11 +12,12 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <!--(action) dentro de (form) serve para enviar os dados do formulário.-->
 <!--(autocomplete off) dentro de (form) serve para parar de preecher automaticamente o formulário.-->
 <!--(Input : text) serve para criar a barra para escrever.-->
 <!--(label) serve para vincular (nome) com a barra do  formulário.-->
+<!--em (method), se colocar (get) o seu formulário aparecerá na url, se colocar (post) não aparecerá. Isso aumenta um pouco a segurança-->
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label>
