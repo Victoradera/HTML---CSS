@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /*Aparelho deitado (landscape)*/
+
+body {
+    background-color: coral;
+    background: url(../imagens/Captura\ de\ tela\ 2025-05-02\ 114546.png);
+    background-position: left bottom;
+}
